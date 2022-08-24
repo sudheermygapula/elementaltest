@@ -1,7 +1,7 @@
 kind: Cluster
 apiVersion: provisioning.cattle.io/v1
 metadata:
-  name: democluster
+  name: testcluster
   namespace: fleet-default
 spec:
   rkeConfig:
@@ -11,7 +11,7 @@ spec:
         machineConfigRef:
           apiVersion: elemental.cattle.io/v1beta1
           kind: MachineInventorySelectorTemplate
-          name: demomachineselector
+          name: testclusterselector
         name: pool1
         quantity: 1
         unhealthyNodeTimeout: 0s
