@@ -16,4 +16,4 @@ spec:
         debug: true
   machineName: walotectmachine
   machineInventoryLabels:
-    location: "walotectnode"
+    location: "europewalotect"
