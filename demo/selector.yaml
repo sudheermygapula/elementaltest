@@ -1,7 +1,7 @@
 apiVersion: elemental.cattle.io/v1beta1
 kind: MachineInventorySelectorTemplate
 metadata:
-  name: testclusterselector
+  name: walotectselector
   namespace: fleet-default
 spec:
   template:
@@ -10,4 +10,4 @@ spec:
         matchExpressions:
           - key: location
             operator: In
-            values: [ 'europetest' ]
+            values: [ 'europewalotect' ]
