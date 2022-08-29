@@ -12,7 +12,7 @@ spec:
     elemental:
       install:
         reboot: true
-        device: /dev/sda1
+        device: /nvme0n1/nvme0n1p3
         debug: true
   machineName: walotectmachine1
   machineInventoryLabels:
