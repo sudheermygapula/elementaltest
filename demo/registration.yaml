@@ -8,7 +8,7 @@ spec:
     cloud-config:
       users:
         - name: root
-          passwd: root
+          passwd: admin@123
     elemental:
       install:
         reboot: true
