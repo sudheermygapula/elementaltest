@@ -1,7 +1,7 @@
 apiVersion: elemental.cattle.io/v1beta1
 kind: MachineRegistration
 metadata:
-  name: iqemdemo
+  name: iqemdemomachine
   namespace: fleet-default
 spec:
   config:
