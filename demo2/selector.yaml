@@ -10,4 +10,4 @@ spec:
         matchExpressions:
           - key: location
             operator: In
-            values: [ 'europe' ]
+            values: [ 'europe2' ]
