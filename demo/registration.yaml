@@ -1,7 +1,7 @@
 apiVersion: elemental.cattle.io/v1beta1
 kind: MachineRegistration
 metadata:
-  name: walotectnode5
+  name: iqemdemo
   namespace: fleet-default
 spec:
   config:
@@ -14,6 +14,6 @@ spec:
         reboot: true
         device: dev/sda
         debug: true
-  machineName: walotectmachine5
+  machineName: iqemdemo
   machineInventoryLabels:
-    location: "europewalotect5"
+    location: "europe"
