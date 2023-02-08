@@ -1,0 +1,19 @@
+apiVersion: elemental.cattle.io/v1beta1
+kind: MachineRegistration
+metadata:
+  name: chevrondemomachine
+  namespace: fleet-default
+spec:
+  config:
+    cloud-config:
+      users:
+        - name: root
+          passwd: admin@123
+    elemental:
+      install:
+        reboot: true
+        device: dev/sda
+        debug: true
+  machineName: chevrondemomachine
+  machineInventoryLabels:
+    location: "usa"
