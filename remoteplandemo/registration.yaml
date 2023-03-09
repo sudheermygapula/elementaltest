@@ -14,6 +14,8 @@ spec:
         reboot: true
         device: /dev/sda
         debug: true
+      registration:
+        emulate-tpm: true
   machineInventoryLabels:
     location: "europe"
     manufacturer: "${System Information/Manufacturer}"
