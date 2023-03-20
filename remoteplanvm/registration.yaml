@@ -1,0 +1,22 @@
+apiVersion: elemental.cattle.io/v1beta1
+kind: MachineRegistration
+metadata:
+  name: remoteplandemonodevm
+  namespace: fleet-default
+spec:
+  config:
+    cloud-config:
+      users:
+        - name: "root"
+          passwd: "test@1234"
+    elemental:
+      install:
+        reboot: true
+        device: /dev/sda
+        debug: true
+  machineInventoryLabels:
+    location: "europe"
+    manufacturer: "${System Information/Manufacturer}"
+    productName: "${System Information/Product Name}"
+    serialNumber: "${System Information/Serial Number}"
+    machineUUID: "${System Information/UUID}"
