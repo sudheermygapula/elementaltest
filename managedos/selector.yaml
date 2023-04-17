@@ -1,7 +1,7 @@
 apiVersion: elemental.cattle.io/v1beta1
 kind: MachineInventorySelectorTemplate
 metadata:
-  name: iqemdemoselector
+  name: managedosselector
   namespace: fleet-default
 spec:
   template:
