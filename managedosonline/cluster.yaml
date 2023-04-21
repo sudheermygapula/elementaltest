@@ -1,7 +1,7 @@
 kind: Cluster
 apiVersion: provisioning.cattle.io/v1
 metadata:
-  name: managedostest1
+  name: managedostestonline
   namespace: fleet-default
 spec:
   rkeConfig:
@@ -11,8 +11,8 @@ spec:
         machineConfigRef:
           apiVersion: elemental.cattle.io/v1beta1
           kind: MachineInventorySelectorTemplate
-          name: managedosselector1
-        name: managedos1
+          name: managedosselectoronline
+        name: managedosonline
         quantity: 1
         unhealthyNodeTimeout: 0s
         workerRole: true
