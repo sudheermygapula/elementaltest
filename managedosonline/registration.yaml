@@ -1,7 +1,7 @@
 apiVersion: elemental.cattle.io/v1beta1
 kind: MachineRegistration
 metadata:
-  name: managedosmachine1
+  name: mosmachine
   namespace: fleet-default
 spec:
   config:
@@ -14,6 +14,6 @@ spec:
         reboot: true
         device: dev/sda
         debug: true
-  machineName: managedosdemoonline
+  machineName: mosmachine
   machineInventoryLabels:
     location: "europe"
