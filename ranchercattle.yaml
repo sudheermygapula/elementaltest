@@ -1,0 +1,21 @@
+
+---
+
+apiVersion: v1
+kind: Secret
+metadata:
+  name: rancher-token
+  namespace: cattle-system
+  annotations:
+    kubernetes.io/service-account.name: "cattle"
+type: kubernetes.io/service-account-token
+
+---
+
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: cattle
+  namespace: cattle-system
+secrets:
+- name: rancher-token
