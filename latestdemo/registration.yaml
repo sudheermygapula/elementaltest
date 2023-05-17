@@ -1,0 +1,21 @@
+apiVersion: elemental.cattle.io/v1beta1
+kind: MachineRegistration
+metadata:
+  name: msgbroker-nodes
+  namespace: fleet-default
+spec:
+  config:
+    cloud-config:
+      users:
+        - name: "root"
+          passwd: "admin@123"
+    elemental:
+      install:
+        reboot: true
+        device: /dev/sda
+        debug: true
+  machineInventoryLabels:
+    manufacturer: "${System Information/Manufacturer}"
+    productName: "${System Information/Product Name}"
+    serialNumber: "${System Information/Serial Number}"
+    machineUUID: "${System Information/UUID}"
