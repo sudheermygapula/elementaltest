@@ -16,4 +16,4 @@ spec:
         quantity: 1
         unhealthyNodeTimeout: 0s
         workerRole: true
-  kubernetesVersion: v1.23.17+k3s1
+  kubernetesVersion: v1.23.16+k3s1
