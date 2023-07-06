@@ -6,6 +6,8 @@ metadata:
 spec:
   # Set to the new Elemental version you would like to upgrade to
   osImage: "registry.opensuse.org/isv/rancher/elemental/stable/teal53/15.4/rancher/elemental-teal/5.3:latest"
+  clusterTargets:
+    - clusterName: local
   upgradeContainer:
     envs:
       - name: FORCE
